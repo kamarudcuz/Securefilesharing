@@ -4,15 +4,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Project</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+  body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #e3f6ff 0%, #ffffff 100%);
+  color: #222;
+  min-height: 100vh;
+}
+
+header {
+  background: #38b6ff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo h2 {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 28px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #23272f;
+}
+
+
+.about {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(56,182,255,0.12);
+  padding: 36px 32px;
+}
+
+.about h1 {
+  font-size: 2.2rem;
+  color: #38b6ff;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  line-height: 1.6;
+}
+
+.details h2 {
+  font-size: 1.2rem;
+  color: #38b6ff;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.details ul {
+  list-style: disc inside;
+  margin-bottom: 18px;
+}
+
+.details ul li {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.details p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+strong {
+  color: #23272f;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 16px 10px;
+    text-align: center;
+  }
+  nav a {
+    margin-left: 12px;
+    margin-top: 8px;
+    display: inline-block;
+  }
+  .about {
+    padding: 18px 8px;
+  }
+}
+  </style>
 </head>
 <body>
   <header>
     <div class="logo">
-      <h2>🔒 Secure Share</h2>
+      <h2> Secure Share</h2>
     </div>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="example.html">Home</a>
       <a href="#">Dashboard</a>
       <a href="#">Monitoring</a>
     </nav>
@@ -44,3 +149,4 @@
   </section>
 </body>
 </html>
+
